@@ -45,7 +45,10 @@ This repo moves transactions from Splitwise to YNAB.
     - Similarly, Under `Variables` tab, using `New repository variable`, add:
         - Name: `YNAB_BUDGET_NAME`, Value: your YNAB budget name (check your YNAB app or website, if you don't know, fill 'My Budget')
         - Name: `YNAB_ACCOUNT_NAME`, Value: 'Splitwise' (created in step 1).
-
+5. Enable Github Actions:
+    - Go to the `Actions` tab in your repo. Enable Gibhub actions.
+    - Select the `Splitwise-YNAB Sync` workflow, and enable that too.
+    - Click "Run workflow" to test that everything is working.
 
 The Github Actions now triggers this code repo at `12:00 UTC` everyday and transfers previous day's transactions from Splitwise to YNAB.
 
